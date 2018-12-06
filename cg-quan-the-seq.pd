@@ -1,4 +1,4 @@
-#N canvas 360 56 1415 817 10;
+#N canvas 362 50 1415 817 10;
 #X msg 374 461 1;
 #X msg 540 698 1;
 #X text 280 24 arg1: name of text define that hold the sequence;
@@ -237,7 +237,6 @@
 #X msg 54 388 1;
 #X obj 520 572 + 1;
 #X obj 414 564 + 0.49999;
-#X obj 414 631 max 1;
 #X obj 54 81 t b b b b, f 46;
 #X text 456 141 mute the player until the quantization is over;
 #X text 477 231 clear the q text defines;
@@ -246,6 +245,7 @@
 #X text 73 285 than \, reorder by time into the QR .txt;
 #X text 162 488 round length to nearest beat;
 #X text 46 444 unmute the player;
+#X obj 414 631 max 2;
 #X connect 0 0 4 0;
 #X connect 1 0 17 1;
 #X connect 3 0 0 0;
@@ -259,9 +259,9 @@
 #X connect 15 0 3 0;
 #X connect 15 1 28 0;
 #X connect 15 2 6 0;
-#X connect 16 0 31 0;
+#X connect 16 0 30 0;
 #X connect 18 0 17 0;
-#X connect 19 0 30 0;
+#X connect 19 0 38 0;
 #X connect 20 1 29 0;
 #X connect 22 0 18 0;
 #X connect 22 1 1 0;
@@ -270,10 +270,10 @@
 #X connect 26 0 27 0;
 #X connect 26 1 3 0;
 #X connect 27 0 25 0;
-#X connect 28 0 30 0;
+#X connect 28 0 38 0;
 #X connect 29 0 19 0;
-#X connect 30 0 22 0;
-#X connect 31 0 8 0;
-#X connect 31 1 11 0;
-#X connect 31 2 14 0;
-#X connect 31 3 24 0;
+#X connect 30 0 8 0;
+#X connect 30 1 11 0;
+#X connect 30 2 14 0;
+#X connect 30 3 24 0;
+#X connect 38 0 22 0;

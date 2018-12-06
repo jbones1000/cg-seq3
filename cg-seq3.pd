@@ -1,4 +1,4 @@
-#N canvas 631 50 799 676 10;
+#N canvas 632 50 799 676 10;
 #X obj 46 622 outlet;
 #N canvas 11 50 867 431 latch 0;
 #X text 482 130 THE LATCH!;
@@ -301,7 +301,7 @@ of select;
 #X obj 49 161 t a a;
 #X obj 81 190 s \$0-pass;
 #X obj 49 62 inlet notes, f 17;
-#N canvas 55 50 1381 963 quantize 0;
+#N canvas 56 50 1381 963 quantize 0;
 #X floatatom 1125 655 5 0 0 0 - - -, f 5;
 #X msg 1113 677 qAmt \$1;
 #X obj 138 346 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
