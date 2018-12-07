@@ -1,4 +1,4 @@
-#N canvas 78 50 1536 956 10;
+#N canvas 83 50 1536 956 10;
 #X obj 119 942 <, f 5;
 #X obj 119 906 t f f;
 #X obj 119 967 sel 1;
@@ -45,11 +45,11 @@ that have no tempo. turn on(1) for patches that will sync to clock
 #X connect 13 0 5 0;
 #X connect 14 0 6 0;
 #X restore 123 351 pd og-metro;
-#N canvas 463 230 618 485 link-metro 0;
+#N canvas 464 227 618 485 link-metro 0;
 #X obj 117 19 inlet bpm;
 #X obj 115 386 outlet ticks;
 #X obj 325 386 outlet BPM;
-#N canvas 44 50 815 554 LINK 0;
+#N canvas 45 50 815 554 LINK 0;
 #X msg 355 126 tempo \$1;
 #X msg 144 127 resolution \$1;
 #X msg 247 147 reset \$1 \$2;
@@ -284,6 +284,9 @@ that have no tempo. turn on(1) for patches that will sync to clock
 #X obj 165 772 i;
 #X obj 165 794 change;
 #X text 223 840 send out 24 ticks per beat;
+#X floatatom 140 592 5 0 0 0 - - -, f 5;
+#X obj 420 603 wrap;
+#X obj 421 578 + 0;
 #X connect 0 0 2 0;
 #X connect 1 0 0 1;
 #X connect 1 1 0 0;
@@ -320,7 +323,7 @@ that have no tempo. turn on(1) for patches that will sync to clock
 #X connect 34 0 33 0;
 #X connect 35 0 26 0;
 #X connect 36 0 10 0;
-#X connect 37 0 25 0;
+#X connect 37 0 72 0;
 #X connect 38 0 11 0;
 #X connect 39 0 31 0;
 #X connect 40 0 39 0;
@@ -362,3 +365,5 @@ that have no tempo. turn on(1) for patches that will sync to clock
 #X connect 66 0 67 0;
 #X connect 67 0 68 0;
 #X connect 68 0 63 0;
+#X connect 71 0 25 0;
+#X connect 72 0 71 0;
