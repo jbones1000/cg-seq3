@@ -1,4 +1,4 @@
-#N canvas 638 50 799 676 10;
+#N canvas 639 50 799 676 10;
 #X obj 46 622 outlet;
 #N canvas 11 50 867 431 latch 0;
 #X text 482 130 THE LATCH!;
@@ -465,7 +465,7 @@ of notes than it freezes;
 #X connect 50 0 18 0;
 #X connect 51 0 19 0;
 #X restore 47 543 pd quantize stuff;
-#N canvas 99 50 1652 963 play-the-seq 0;
+#N canvas 100 50 1652 963 play-the-seq 1;
 #X obj 342 890 outlet;
 #X obj 570 322 r seq3-\$1-actions;
 #X obj 433 94 sel 0 1, f 10;
