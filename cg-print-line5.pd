@@ -1,4 +1,4 @@
-#N canvas 340 124 1297 759 10;
+#N canvas 345 109 1297 759 10;
 #X obj 62 22 inlet BPM;
 #X obj 282 22 inlet MIDI-BPM;
 #X obj 153 22 inlet LINK-BPM;
