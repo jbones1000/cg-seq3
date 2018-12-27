@@ -1,0 +1,18 @@
+#N canvas 914 441 450 300 10;
+#X text 171 32 Arg1: Button number;
+#X text 174 56 Arg2: Name;
+#X obj 51 221 s cgSc-\$1;
+#X obj 33 56 t b;
+#X obj 33 27 inlet trigger;
+#X obj 51 146 f, f 5;
+#X obj 106 146 + 1, f 7;
+#X obj 51 168 t f f;
+#X obj 51 190 % 2;
+#X text 177 85 Arg3: number cycles(default 2(0-1));
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X connect 5 0 7 0;
+#X connect 6 0 5 1;
+#X connect 7 0 8 0;
+#X connect 7 1 6 0;
+#X connect 8 0 2 0;
