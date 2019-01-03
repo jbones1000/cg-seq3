@@ -1,4 +1,4 @@
-#N canvas 675 50 799 676 10;
+#N canvas 676 50 799 676 10;
 #X obj 47 643 outlet;
 #N canvas 11 50 867 431 latch 0;
 #X text 482 130 THE LATCH!;
@@ -80,7 +80,7 @@ directly to output if disabled;
 #X connect 7 0 4 0;
 #X connect 8 0 5 0;
 #X restore 49 135 pd latch;
-#N canvas 217 50 1523 881 states 0;
+#N canvas 218 50 1523 881 states 0;
 #X obj 226 17 inlet;
 #X msg 1180 222 stop;
 #X msg 1121 221 0;
